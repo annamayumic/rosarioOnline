@@ -1,0 +1,33 @@
+/*--------selecao ----------*/
+#selecaoTercos{
+  display: none;
+}
+
+
+/*----------home------------*/
+*{
+  text-align: center;
+}
+body{
+  height: 100vh;
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: blue;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+ul{
+  display: flex;
+}
+li{
+  display: flex;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosary</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<header>
+    <h1 id="santoRosarioOnline">Santo Rosario Online</h1>
+</header>
+
+<section id="botoes">
+    <div>
+        <button id="input-rosario" onclick="rosarioInteiro()">Santo Rosário</button>
+        <button id="input-terco" onclick="escolhaTerco()">Terço</button>
+    </div>
+    <div id="selecaoTercos">
+        <button id="gozosos" onclick="misteriosGozosos()">gozosos</button>
+        <button id="dolorosos" onclick="misteriosDolorosos()">dolorosos</button>
+        <button id="gloriosos" onclick="misteriosGloriosos()">gloriosos</button>
+       <button id="luminosos">luminosos</button>
+    </div>
+
+</section>
+<section>
+    <div id="container">
+
+    </div>
+    <div id="divBolas" style="display: none;">
+        <ul>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+          </ul> 
+    </div>
+</section>
+    
+<script src="script.js"></script>
+</body>
+</html>
