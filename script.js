@@ -24,8 +24,8 @@ var cruz = new Partes('Sinal da Cruz', 'Em nome do Pai, do Filho e do Espírito 
 var credo = new Partes('Credo apostólico', 'Creio em Deus pai todo poderoso, criador do céu e da terra, e em Jesus cristo seu único filho, nosso senhor que foi concebido, pelo poder do Espírito Santo, nasceu da virgem Maria, padeceu sob pôncio Pilatos, foi crucificado, morto e sepultado, desceu a mansão dos mortos, ressuscitou ao terceiro dia subiu aos céus e está sentado a direita de Deus pai todo poderoso donde há de vir e julgar os vivos e os mortos. Creio no Espírito santo, na Santa igreja Católica, na comunhão dos santos, na remissão dos pecados na ressurreição da carne e na vida eterna. Amém.', false)
 var paiNosso = new Partes('Pai Nosso', 'Pai nosso, que estais no céu, santificado seja o vosso nome; venha a nós o vosso reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; e perdoai as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.', false)
 var aveMaria = new Partes ('Ave Maria', 'Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.', true)
-var gloria = new Partes('Gloria ao Pai', 'Glória ao Pai, ao Filho e ao Espírito Santo, como era no princípio, agora e sempre. Amém.', false)
-var ohJesus= new Partes('Oracao de Fatima', 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas para o Céu, principalmente as que mais precisarem. Amém', false)
+var gloria = new Partes('Glória ao Pai', 'Glória ao Pai, ao Filho e ao Espírito Santo, como era no princípio, agora e sempre. Amém.', false)
+var ohJesus= new Partes('Ó meu Jesus, perdoai-nos!', 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas para o Céu, principalmente as que mais precisarem. Amém', false)
 var mGo1 = new Partes('O anúncio do Arcanjo São Gabriel a Virgem Maria','"O anjo disse-lhe: Não temas, Maria, pois encontraste graça diante de Deus. Eis que conceberás e darás à luz um filho e lhe porás o nome de Jesus" (Lc 1,30-31) Contemplamos a anunciação do anjo Gabriel à Nossa Senhora e a encarnação do verbo de Deus em seu ventre.   "Eis aqui a serva do Senhor, faça-se em mim segundo a vossa palavra" - aqui vemos em Maria o despojamento, a humildade, o amor a Deus e a entrega de si mesma. Meditação: Hoje o Senhor nos chama dar o sim para Jesus; nascer em nosso coração em nossa vida, dar sentido à nossa vida terrena e acolher o plano de Deus para nossa salvação', false)
 var mGo2 = new Partes('Visitação de Maria a sua prima, Isabel','"Naqueles dias, Maria se levantou e foi às pressas às montanhas, a uma cidade de Judá.Entrou em casa de Zacarias e saudou Isabel"( Lc 1,39-40) Contemplamos a visitação de Nossa Senhora à Santa Isabel.     "E partindo às pressas foi às montanhas ficar com sua prima que já de idade avançada estava grávida"....  Isabel a saúda: Tu és bendita.. como posso merecer que a MÃE do meu Senhor venha me visitar, quando adentrastes pela porta a criança saltou em meu ventre.  Maria responde: "Minha Alma glorifica o Senhor... Meu espírito exulta em Deus Meu Salvador!" A humildade e a entrega de si mesma em favor dos mais necessitados; hoje Deus nos chama a trabalhar em sua vinha, sair de nosso conforto e procurar os que estão necessitados; não só de pão, mas de amor, apoio e do conhecimento da palavra do Senhor.', false)
 var mGo3 = new Partes('Nascimento do Filho de Deus','"Estando eles ali, completaram-se os dias dela. E deu à luz seu filho primogênito"( Lc 2,6-7a) Contemplamos o nascimento de Nosso Senhor Jesus Cristo em Belém.   Um Deus tão grande e poderoso vem até nós... o verbo de Deus se faz carne, sai da sua divindade e se torna um pobre mortal semelhante a nós em tudo, menos no pecado. Jesus nos mostra que nada que temos ou possuímos, nesse mundo importa, comparado àquilo que há de vir... o mais importante: a vida eterna. O orgulho de um anjo que queria ser Deus gerou o pecado. E o salário do pecado é a morte...   ...a humildade é a chave de toda a nossa salvação, a pureza de coração, a entrega sincera a Deus é a obediência, e o salário da obediência é a vida eterna. Pois todo aquele que crer em mim mesmo que morra eu o ressuscitarei.', false)
@@ -141,25 +141,25 @@ function executar(a){
     
     if(contador>2&contador<6){
       if(a[contador-1]=== aveMaria){
-        document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = 'blue'
+        document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
       }
       tremarias.style.display="flex";
       var verm = document.querySelectorAll('div .tresmarias')[c]
-      verm.style.backgroundColor = 'red'
+      verm.style.backgroundColor = 'rgb(203, 182, 117)'
       c++
     }else{
       tremarias.style.display = "none"
       if(a[contador]=== aveMaria){
               if(a[contador-1]=== aveMaria){
-                document.querySelectorAll('li div')[c-1].style.backgroundColor = 'blue'
+                document.querySelectorAll('li div')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
               }
             divBolas.style.display = "flex"
             var red = document.querySelectorAll('li div')[c]
-            red.style.backgroundColor = 'red'
+            red.style.backgroundColor = ' rgb(203, 182, 117)'
             c++
           }else{
               if(a[contador-1]=== aveMaria){
-                document.querySelectorAll('li div')[c-1].style.backgroundColor = 'blue'
+                document.querySelectorAll('li div')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
               }
             divBolas.style.display = "none"
             c=0
