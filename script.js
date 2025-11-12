@@ -21,7 +21,7 @@ function Partes(title, content, balls){
 
 //------criando as partes -----//
 var cruz = new Partes('Sinal da Cruz', 'Em nome do Pai, do Filho e do Espírito Santo', false)
-var introCredo = new Partes('', false)
+var introCredo = new Partes('Divino Jesus, eu vos ofereço esse terço que vou rezar contemplando os mistérios de vossa redenção. Concedei pela intercessão de Maria, vossa mãe santíssima, a quem me dirijo, as virtudes que são necessárias para bem rezá-lo e a graça de ganhar as indulgências anexas a essa adoração. Ofereço-vos particularmente este santo terço pelas necessidades mais urgentes de nosso país. Abençoai e santificai a família brasileira e dai-nos a paz.', false)
 var credo = new Partes('Credo apostólico', 'Creio em Deus pai todo poderoso, criador do céu e da terra, e em Jesus cristo seu único filho, nosso senhor que foi concebido, pelo poder do Espírito Santo, nasceu da virgem Maria, padeceu sob pôncio Pilatos, foi crucificado, morto e sepultado, desceu a mansão dos mortos, ressuscitou ao terceiro dia subiu aos céus e está sentado a direita de Deus pai todo poderoso donde há de vir e julgar os vivos e os mortos. Creio no Espírito santo, na Santa igreja Católica, na comunhão dos santos, na remissão dos pecados na ressurreição da carne e na vida eterna. Amém.', false)
 var paiNosso = new Partes('Pai Nosso', 'Pai nosso, que estais no céu, santificado seja o vosso nome; venha a nós o vosso reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; e perdoai as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.', false)
 var introAveMariaUm = new Partes('', false)
@@ -175,5 +175,6 @@ function executar(a){
     
     contador++;
 }}
+
 
 
