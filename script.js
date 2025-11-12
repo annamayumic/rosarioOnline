@@ -21,8 +21,12 @@ function Partes(title, content, balls){
 
 //------criando as partes -----//
 var cruz = new Partes('Sinal da Cruz', 'Em nome do Pai, do Filho e do Espírito Santo', false)
+var introCredo = new Partes('', false)
 var credo = new Partes('Credo apostólico', 'Creio em Deus pai todo poderoso, criador do céu e da terra, e em Jesus cristo seu único filho, nosso senhor que foi concebido, pelo poder do Espírito Santo, nasceu da virgem Maria, padeceu sob pôncio Pilatos, foi crucificado, morto e sepultado, desceu a mansão dos mortos, ressuscitou ao terceiro dia subiu aos céus e está sentado a direita de Deus pai todo poderoso donde há de vir e julgar os vivos e os mortos. Creio no Espírito santo, na Santa igreja Católica, na comunhão dos santos, na remissão dos pecados na ressurreição da carne e na vida eterna. Amém.', false)
 var paiNosso = new Partes('Pai Nosso', 'Pai nosso, que estais no céu, santificado seja o vosso nome; venha a nós o vosso reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; e perdoai as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.', false)
+var introAveMariaUm = new Partes('', false)
+var introAveMariaDois = new Partes('', false)
+var introAveMariaTres = new Partes('', false)
 var aveMaria = new Partes ('Ave Maria', 'Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.', true)
 var gloria = new Partes('Glória ao Pai', 'Glória ao Pai, ao Filho e ao Espírito Santo, como era no princípio, agora e sempre. Amém.', false)
 var ohJesus= new Partes('Ó meu Jesus, perdoai-nos!', 'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno; levai as almas para o Céu, principalmente as que mais precisarem. Amém', false)
@@ -46,10 +50,11 @@ var Lu2 = new Partes('Auto-revelação nas Bodas de Caná','Contemplamos sua aut
 var Lu3 = new Partes('Anúncio do Reino de Deus e convite à conversão','Contemplamos o anúncio do Reino de Deus com o convite à conversão.   Jesus nos convida a nos convertermos plenamente às leis de Deus em busca da felicidade eterna.   O anúncio da Boa-Nova traz a esperança de um mundo melhor para todos os homens. Jesus anuncia o Reino de Deus com o convite à conversão - Mistério de luz é a pregação com a qual Jesus anuncia o advento do Reino de Deus e convida à conversão (cf Mc 1,15), perdoando os pecados de quem a ele se dirige com humilde confiança (cf Mc 2,3-1; Lc 7,47s), início do mistério de misericórdia que ele prosseguirá exercendo até o fim do mundo, especialmente da reconciliação confiado à sua Igreja (cf Jo 20,22s)', false)
 var Lu4 = new Partes('Transfiguração','Contemplamos a transfiguração de Nosso Senhor Jesus Cristo.   Assim Ele mostra aos Apóstolos e a todos os seres humanos a Sua verdadeira essência divina.   Sua Luz nos orienta a seguir os caminhos do bem. Transfiguração de Jesus - Mistério da luz por excelência é a transfiguração que, segundo a tradição, se deu no monte Tabor. A glória da divindade reluz no rosto de Cristo, enquanto o Pai o apresenta aos apóstolos extasiados para que o "escutem" (cf Lc 9,35) e se disponham a viver com ele o momento doloroso da paixão, a fim de chegarem com ele à glória da ressurreição e a uma vida transfigurada pelo Espírito Santo', false)
 var Lu5 = new Partes('Instituição da Eucaristia','Contemplamos a instituição da Eucaristia.   Jesus nos dá seu próprio corpo e sangue como alimento espiritual para nossas almas.   É a entrega total e a maior prova de Seu Amor por toda a humanidade.   Mesmo sabendo que ia ser traído e entregue ao sacrifício Ele nos deu uma mostra suprema de Sua divindade. Instituição da Eucaristia - Mistério da luz é, enfim, a instituição da Eucaristia, na qual Cristo se faz alimento com o seu corpo e o seu sangue sob os sinais do pão e do vinho, testemunhando "até o extremo" o seu amor pela humanidade (Jo 13,1), por cuja salvação se oferecerá em sacrifício', false)
+var introSalveRainha = new Partes('', false)
 var SalveRainha = new Partes('Salve Rainha', 'Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses Vossos olhos misericordiosos a nós volvei. E, depois deste desterro, nos mostrai Jesus, bendito fruto do Vosso ventre. Ó clemente, ó piedosa,ó doce Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.', false)
 
 //-----listas de objetos ----//
-var lista = [cruz, credo, paiNosso, aveMaria,aveMaria,aveMaria, gloria]
+var lista = [cruz, introCredo, credo, paiNosso, introAveMariaUm, aveMaria, introAveMariaDois, aveMaria, introAveMariaTres, aveMaria, gloria, ohJesus]
 var combo = [paiNosso, aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria, gloria, ohJesus]
 var gozosos = [mGo1,  mGo2,  mGo3, mGo4, mGo5]
 var dolorosos = [mDo1, mDo2, , mDo3,mDo4, mDo5]
@@ -72,6 +77,7 @@ var ordem = lista;
     ordem.push(gloriosos[i])
     var ordem = ordem.concat(combo)
   }
+  ordem.push(introSalveRainha)
   ordem.push(SalveRainha)
   executar(ordem);
 }
@@ -83,6 +89,7 @@ function misteriosGozosos(){
     ordem.push(gozosos[i])
     var ordem = ordem.concat(combo)
   }
+  ordem.push(introSalveRainha)
   ordem.push(SalveRainha)
   executar(ordem);
 }
@@ -94,8 +101,8 @@ function misteriosDolorosos(){
     ordem.push(dolorosos[i])
     var ordem = ordem.concat(combo)
   }
+  ordem.push(introSalveRainha)
   ordem.push(SalveRainha)
-
   executar(ordem);
 }
 
@@ -106,8 +113,8 @@ function misteriosGloriosos(){
     ordem.push(gloriosos[i])
     var ordem = ordem.concat(combo)
   }
+  ordem.push(introSalveRainha)
   ordem.push(SalveRainha)
-
   executar(ordem);
 }
 function misteriosLuminosos(){
@@ -117,8 +124,8 @@ function misteriosLuminosos(){
     ordem.push(luminosos[i])
     var ordem = ordem.concat(combo)
   }
+  ordem.push(introSalveRainha)
   ordem.push(SalveRainha)
-
   executar(ordem);
 }
 //-----funcao apagar a tela inicial---//
@@ -168,4 +175,5 @@ function executar(a){
     
     contador++;
 }}
+
 
