@@ -147,8 +147,8 @@ function executar(a){
   function Clique(){
     display.innerHTML = `<h1>${a[contador].title}</h1> <p>${a[contador].content}</p>` ;
     
-    if(contador==6||contador ==8|contador==10){
-      if(a[contador-1]=== aveMaria){
+    if(contador==6||contador ==8||contador==10){
+      if(a[contador-2]=== aveMaria){
         document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
       }
       tremarias.style.display="flex";
@@ -176,6 +176,7 @@ function executar(a){
     
     contador++;
 }}
+
 
 
 
