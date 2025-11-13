@@ -146,7 +146,7 @@ function executar(a){
   function Clique(){
     display.innerHTML = `<h1>${a[contador].title}</h1> <p>${a[contador].content}</p>` ;
     
-    if(contador>2&contador<6){
+    if(contador>3&contador<10){
       if(a[contador-1]=== aveMaria){
         document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
       }
@@ -175,6 +175,7 @@ function executar(a){
     
     contador++;
 }}
+
 
 
 
