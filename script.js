@@ -21,7 +21,7 @@ function Partes(title, content, balls){
 
 //------criando as partes -----//
 var cruz = new Partes('Sinal da Cruz', 'Em nome do Pai, do Filho e do Espírito Santo', false)
-var introCredo = new Partes('Divino Jesus, eu vos ofereço esse terço que vou rezar contemplando os mistérios de vossa redenção. Concedei pela intercessão de Maria, vossa mãe santíssima, a quem me dirijo, as virtudes que são necessárias para bem rezá-lo e a graça de ganhar as indulgências anexas a essa adoração. Ofereço-vos particularmente este santo terço pelas necessidades mais urgentes de nosso país. Abençoai e santificai a família brasileira e dai-nos a paz.', false)
+var introCredo = new Partes('','Divino Jesus, eu vos ofereço esse terço que vou rezar contemplando os mistérios de vossa redenção. Concedei pela intercessão de Maria, vossa mãe santíssima, a quem me dirijo, as virtudes que são necessárias para bem rezá-lo e a graça de ganhar as indulgências anexas a essa adoração. Ofereço-vos particularmente este santo terço pelas necessidades mais urgentes de nosso país. Abençoai e santificai a família brasileira e dai-nos a paz.', false)
 var credo = new Partes('Credo apostólico', 'Creio em Deus pai todo poderoso, criador do céu e da terra, e em Jesus cristo seu único filho, nosso senhor que foi concebido, pelo poder do Espírito Santo, nasceu da virgem Maria, padeceu sob pôncio Pilatos, foi crucificado, morto e sepultado, desceu a mansão dos mortos, ressuscitou ao terceiro dia subiu aos céus e está sentado a direita de Deus pai todo poderoso donde há de vir e julgar os vivos e os mortos. Creio no Espírito santo, na Santa igreja Católica, na comunhão dos santos, na remissão dos pecados na ressurreição da carne e na vida eterna. Amém.', false)
 var paiNosso = new Partes('Pai Nosso', 'Pai nosso, que estais no céu, santificado seja o vosso nome; venha a nós o vosso reino; seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje; e perdoai as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.', false)
 var introAveMariaUm = new Partes('','O anjo do senhor anunciou à Maria. E ela concebeu do Espírito Santo', false)
@@ -54,12 +54,13 @@ var introSalveRainha = new Partes('','Infinitas graças vos damos, Soberana Rain
 var SalveRainha = new Partes('Salve Rainha', 'Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses Vossos olhos misericordiosos a nós volvei. E, depois deste desterro, nos mostrai Jesus, bendito fruto do Vosso ventre. Ó clemente, ó piedosa,ó doce Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.', false)
 
 //-----listas de objetos ----//
-var lista = [cruz, introCredo, credo, paiNosso, introAveMariaUm, aveMaria, introAveMariaDois, aveMaria, introAveMariaTres, aveMaria, gloria, ohJesus]
+var lista = [cruz, introCredo, credo, paiNosso, introAveMarias, gloria, ohJesus]
 var combo = [paiNosso, aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria, gloria, ohJesus]
 var gozosos = [mGo1,  mGo2,  mGo3, mGo4, mGo5]
 var dolorosos = [mDo1, mDo2, , mDo3,mDo4, mDo5]
 var gloriosos = [mGlo1,  mGlo2, mGlo3, mGlo4, mGlo5]
 var luminosos = [Lu1, Lu2, Lu3, Lu4, Lu5]
+var introAveMarias = [introAveMariaUm, aveMaria, introAveMariaDois, aveMaria, introAveMariaTres, aveMaria]
 
 //----- construcao da lista principal---//
 function rosarioInteiro(){
@@ -146,7 +147,7 @@ function executar(a){
   function Clique(){
     display.innerHTML = `<h1>${a[contador].title}</h1> <p>${a[contador].content}</p>` ;
     
-    if(contador>3&contador<10){
+    if(contador==6||contador ==8|contador==10){
       if(a[contador-1]=== aveMaria){
         document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
       }
@@ -175,6 +176,7 @@ function executar(a){
     
     contador++;
 }}
+
 
 
 
