@@ -52,9 +52,9 @@ var Lu4 = new Partes('Transfiguração','Contemplamos a transfiguração de Noss
 var Lu5 = new Partes('Instituição da Eucaristia','Contemplamos a instituição da Eucaristia.   Jesus nos dá seu próprio corpo e sangue como alimento espiritual para nossas almas.   É a entrega total e a maior prova de Seu Amor por toda a humanidade.   Mesmo sabendo que ia ser traído e entregue ao sacrifício Ele nos deu uma mostra suprema de Sua divindade. Instituição da Eucaristia - Mistério da luz é, enfim, a instituição da Eucaristia, na qual Cristo se faz alimento com o seu corpo e o seu sangue sob os sinais do pão e do vinho, testemunhando "até o extremo" o seu amor pela humanidade (Jo 13,1), por cuja salvação se oferecerá em sacrifício', false)
 var introSalveRainha = new Partes('','Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre, tomar-nos debaixo de vosso misericordioso amparo, e para mais vos obrigar, vos saudamos com a Salve Rainha.', false)
 var SalveRainha = new Partes('Salve Rainha', 'Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses Vossos olhos misericordiosos a nós volvei. E, depois deste desterro, nos mostrai Jesus, bendito fruto do Vosso ventre. Ó clemente, ó piedosa,ó doce Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.', false)
-
+var aveMaria2 = aveMaria
 //-----listas de objetos ----//
-var lista = [cruz, introCredo, credo, paiNosso, introAveMariaUm, aveMaria, introAveMariaDois, aveMaria, introAveMariaTres, aveMaria, gloria, ohJesus]
+var lista = [cruz, introCredo, credo, paiNosso, introAveMariaUm, aveMaria2, introAveMariaDois, aveMaria2, introAveMariaTres, aveMaria2, gloria, ohJesus]
 var combo = [paiNosso, aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria, gloria, ohJesus]
 var gozosos = [mGo1,  mGo2,  mGo3, mGo4, mGo5]
 var dolorosos = [mDo1, mDo2, , mDo3,mDo4, mDo5]
@@ -146,15 +146,15 @@ function executar(a){
   function Clique(){
     display.innerHTML = `<h1>${a[contador].title}</h1> <p>${a[contador].content}</p>` ;
     
-    if(contador==4||contador ==6||contador==8){
-      if(a[contador-2]=== aveMaria){
-        document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
-      }
-      tremarias.style.display="flex";
-      var verm = document.querySelectorAll('div .tresmarias')[c]
-      verm.style.backgroundColor = 'rgb(203, 182, 117)'
-      c++
-    }else{
+    //if(contador==4||contador ==6||contador==8){
+      //if(a[contador-2]=== aveMaria){
+        //document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
+      //}
+      //tremarias.style.display="flex";
+      //var verm = document.querySelectorAll('div .tresmarias')[c]
+      //verm.style.backgroundColor = 'rgb(203, 182, 117)'
+      //c++
+    //}else{
       tremarias.style.display = "none"
       if(a[contador]=== aveMaria){
               if(a[contador-1]=== aveMaria){
@@ -174,7 +174,9 @@ function executar(a){
     }
     
     contador++;
-}}
+//}
+}
+
 
 
 
