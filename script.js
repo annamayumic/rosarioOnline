@@ -152,6 +152,7 @@ function executar(a){
       }
       tremarias.style.display="flex";
       var verm = document.querySelectorAll('div .tresmarias')[c]
+      if( c==0||c==2||c==4)
       verm.style.backgroundColor = 'rgb(203, 182, 117)'
       c++
     }else{
@@ -176,6 +177,7 @@ function executar(a){
     contador++;
 }
 }
+
 
 
 
