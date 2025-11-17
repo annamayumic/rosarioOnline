@@ -155,7 +155,7 @@ function executar(a){
       //verm.style.backgroundColor = 'rgb(203, 182, 117)'
       //c++
     //}else{
-      tremarias.style.display = "none"
+      //tremarias.style.display = "none"
       if(a[contador]=== aveMaria){
               if(a[contador-1]=== aveMaria){
                 document.querySelectorAll('li div')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
@@ -174,8 +174,9 @@ function executar(a){
     }
     
     contador++;
-//}
 }
+}
+
 
 
 
