@@ -146,16 +146,16 @@ function executar(a){
   function Clique(){
     display.innerHTML = `<h1>${a[contador].title}</h1> <p>${a[contador].content}</p>` ;
     
-    //if(contador==4||contador ==6||contador==8){
-      //if(a[contador-2]=== aveMaria){
-        //document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
-      //}
-      //tremarias.style.display="flex";
-      //var verm = document.querySelectorAll('div .tresmarias')[c]
-      //verm.style.backgroundColor = 'rgb(203, 182, 117)'
-      //c++
-    //}else{
-      //tremarias.style.display = "none"
+    if(contador>3 &contador<9){
+      if(a[contador-1]=== aveMaria2){
+        document.querySelectorAll('div .tresmarias')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
+      }
+      tremarias.style.display="flex";
+      var verm = document.querySelectorAll('div .tresmarias')[c]
+      verm.style.backgroundColor = 'rgb(203, 182, 117)'
+      c++
+    }else{
+      tremarias.style.display = "none"
       if(a[contador]=== aveMaria){
               if(a[contador-1]=== aveMaria){
                 document.querySelectorAll('li div')[c-1].style.backgroundColor = ' rgb(237, 218, 166)'
@@ -172,10 +172,11 @@ function executar(a){
             c=0
           }
     }
-    
+
     contador++;
 }
 }
+
 
 
 
