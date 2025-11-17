@@ -52,7 +52,8 @@ var Lu4 = new Partes('Transfiguração','Contemplamos a transfiguração de Noss
 var Lu5 = new Partes('Instituição da Eucaristia','Contemplamos a instituição da Eucaristia.   Jesus nos dá seu próprio corpo e sangue como alimento espiritual para nossas almas.   É a entrega total e a maior prova de Seu Amor por toda a humanidade.   Mesmo sabendo que ia ser traído e entregue ao sacrifício Ele nos deu uma mostra suprema de Sua divindade. Instituição da Eucaristia - Mistério da luz é, enfim, a instituição da Eucaristia, na qual Cristo se faz alimento com o seu corpo e o seu sangue sob os sinais do pão e do vinho, testemunhando "até o extremo" o seu amor pela humanidade (Jo 13,1), por cuja salvação se oferecerá em sacrifício', false)
 var introSalveRainha = new Partes('','Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre, tomar-nos debaixo de vosso misericordioso amparo, e para mais vos obrigar, vos saudamos com a Salve Rainha.', false)
 var SalveRainha = new Partes('Salve Rainha', 'Salve, Rainha, mãe de misericórdia, vida, doçura, esperança nossa, salve! A Vós bradamos, os degredados filhos de Eva. A Vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses Vossos olhos misericordiosos a nós volvei. E, depois deste desterro, nos mostrai Jesus, bendito fruto do Vosso ventre. Ó clemente, ó piedosa,ó doce Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.', false)
-var aveMaria2 = aveMaria
+var aveMaria2 = new Partes ('Ave Maria', 'Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.', false)
+
 //-----listas de objetos ----//
 var lista = [cruz, introCredo, credo, paiNosso, introAveMariaUm, aveMaria2, introAveMariaDois, aveMaria2, introAveMariaTres, aveMaria2, gloria, ohJesus]
 var combo = [paiNosso, aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria,aveMaria, gloria, ohJesus]
@@ -177,6 +178,7 @@ function executar(a){
     contador++;
 }
 }
+
 
 
 
